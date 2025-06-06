@@ -20,7 +20,7 @@ const Header = () => {
                     <span className="h-4 w-px bg-white mx-2"></span>
 
                 
-                <div className="flex  items-center gap-2 ">
+                <div className="flex  items-center gap-0 ">
                     <a href="#" className="flex items-center gap-1 font-semibold hover:underline whitespace-nowrap">
                         <img src={trackIcon} alt="Truck Icon" className="w-3 h-3" />Track YourOrder</a>
 
