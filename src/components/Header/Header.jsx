@@ -1,23 +1,39 @@
 import React from 'react';
+import trackIcon from '../Header/track-icon.png';
+
 
 const Header = () => {
     return (
         <>
 
-            <div className="w-full bg-cyan-700 text-white text-sm px-4 py-2 flex flex-col sm:flex-row justify-between items-center">
-                <div className="flex flex-wrap items-center gap-x-2">
+            <div className="w-full bg-cyan-700 text-white text-sm p-2 flex flex-rows sm:flex-row justify-between items-center font-sans">
+                <div className="flex items-center flex-wrap gap-1 text-sm sm:text-base">
                     <span className="font-semibold">Until the end of the sale:</span>
-                    <span className="font-bold ml-2">893</span>Days
-                    <span className="font-bold ml-2">17</span> Hours
-                    <span className="font-bold ml-2">59 </span>minutes
-                    <span className="font-bold ml-2">36</span>seconds
-                    <span className="font-bold ml-2">Buy One Get One Free <span className="text-yellow-500 font-semibold ">First order</span></span>
+                    <span className="font-bold ">893</span>Days
+                    <span className="font-bold ">17</span> Hours
+                    <span className="font-bold ">59 </span>minutes
+                    <span className="font-bold ">36</span>seconds
+                    </div>
+                    <span className="ml-3 font-bold">
+                 
+                    Buy One Get One Free on <span className="text-yellow-500 font-semibold">First Order</span></span>
+                    <span className="h-4 w-px bg-white mx-2"></span>
 
-                </div>
-                <div className="flex flex-wrap items-center gap-4 mt-2 sm:mt-0 ">
-                    <a href="#" className=" font-semibold hover:underline"> Track your Order</a>
+                
+                <div className="flex  items-center gap-0 ">
+                    <a href="#" className="flex items-center gap-1 font-semibold hover:underline whitespace-nowrap">
+                        <img src={trackIcon} alt="Truck Icon" className="w-3 h-3" />Track YourOrder</a>
+
                     <a href="#" className="hover:underline font-semibold"> Order Tracking</a>
                     <a href="#" className="hover:underline font-semibold"> About Us </a>
+                    <select className="bg-cyan-700 text-white font-semibold outline-none">
+                        <option>Eng</option>
+                        <option>Esp</option>
+                    </select>
+                    <select className="bg-cyan-700 text-white font-semibold outline-none">
+                        <option>USD</option>
+                        <option>EUR</option>
+                    </select>
                 </div>
             </div>
 
