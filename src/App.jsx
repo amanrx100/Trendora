@@ -1,19 +1,21 @@
 //import { useState } from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
+import Topbar from "./components/Header/Topbar";
 import Middle from "./components/Header/Middle";
-import Last from "./components/Header/Last";
+import NavBar from "./components/Header/NavBar";
 import Footer from "./components/Footer/Footer";
-
+import Mid from "./components/Mid.jsx/Mid";
 function App() {
   //const [count, setCount] = useState(0);
 
   return (
     <>
-    <Header/>
+    <Topbar/>
     <Middle/>
       <hr className="w-full border-t border-gray-300 my-0"/>
-    <Last/>
+    <NavBar/>
+
+    <Mid/>
     <Footer/>
     
       
