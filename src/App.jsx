@@ -6,6 +6,9 @@ import NavBar from "./components/Header/NavBar";
 import Footer from "./components/Footer/Footer";
 import HeroSection  from "./components/Mid.jsx/HeroSection";
 import CategorySlider  from "./components/Mid.jsx/CategorySlider";
+import NewsSection  from "./components/Mid.jsx/newssection";
+import BestSeller from "./components/Mid.jsx/BestSeller";
+
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -19,6 +22,9 @@ function App() {
 
     <HeroSection/>
     <CategorySlider/>
+    <BestSeller/>
+    <NewsSection/>
+    
     <Footer/>
     
       

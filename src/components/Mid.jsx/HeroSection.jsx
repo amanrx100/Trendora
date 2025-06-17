@@ -35,7 +35,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="relative w-400 h-130 mt-10 bg-cyan-50  mx-auto  items-center justify-center overflow-hidden pb-24 rounded-[50px_50px_50px_50px]">
+    <div className="relative w-350 h-130 mt-10 bg-cyan-50  mx-auto  items-center justify-center overflow-hidden pb-24 rounded-[50px_50px_50px_50px]">
       {/* Slide Content */}
       <div className="relative min-h-[500px] flex items-center justify-center  px-4 py-2  mx-auto">
         <button
