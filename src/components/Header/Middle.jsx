@@ -8,8 +8,8 @@ import Shopping from "../../assets/Shopping.png";
 const Middle = () => {
     return (
         <>
-            <div className="w-full bg-white text-sm p-2 sm:p-3 flex flex-col sm:flex-row justify-start gap-y-3 sm:gap-y-0 sm:gap-x-6 items-center font-sans">
-                <div className="flex items-center flex-wrap gap-1 text-xs sm:text-sm md:text-base">
+            <div className="w-full bg-white text-sm p-2 sm:p-3 flex flex-col sm:flex-row justify-start gap-y-3 sm:gap-y-0   sm:gap-x-6 items-center font-sans">
+                <div className="flex items-center flex-wrap gap-1 text-xs sm:text-sm md:text-base mx-auto">
                     <a href="#" className="flex items-center gap-2 font-semibold hover:underline whitespace-nowrap">
                         <img src={logo} alt="logo" className="w-40 h-8 md:w-55 md:h-10 object-contain" />
                     </a>

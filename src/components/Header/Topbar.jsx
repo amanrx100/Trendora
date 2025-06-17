@@ -3,9 +3,9 @@ import trackIcon from '../../assets/track-icon.png';
 
 const Topbar = () => {
   return (
-    <div className="w-full bg-cyan-700 text-white text-xs sm:text-sm px-2 py-1 flex justify-between items-center font-sans whitespace-nowrap overflow-hidden">
+    <div className="w-full bg-cyan-700 text-white mx-auto text-xs sm:text-sm px-2 py-1 flex justify-between items-center font-sans whitespace-nowrap overflow-hidden">
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 mx-auto">
         <span className="font-semibold">Until the end of the sale:</span>
         <span className="font-bold">893</span> Days
         <span className="font-bold">17</span> Hours
