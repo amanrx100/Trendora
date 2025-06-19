@@ -4,7 +4,20 @@ import Topbar from "./components/Header/Topbar";
 import Middle from "./components/Header/Middle";
 import NavBar from "./components/Header/NavBar";
 import Footer from "./components/Footer/Footer";
-import Mid from "./components/Mid.jsx/Mid";
+import HeroSection  from "./components/Mid.jsx/HeroSection";
+import CategorySlider  from "./components/Mid.jsx/CategorySlider";
+import NewsSection  from "./components/Mid.jsx/newssection";
+//import BestSeller from "./components/Mid.jsx/BestSeller";
+import ShopByBrands from "./components/Mid.jsx/ShopByBrands";
+import BlueBox from "./components/Mid.jsx/BlueBox";
+import PromotionalBanner from "./components/Mid.jsx/PromotionalBanner";
+import FlashSale from "./components/Mid.jsx/FLashSale";
+import ProductSlide from "./components/Mid.jsx/ProductSlide";
+import ProductSlider2 from "./components/Mid.jsx/ProductSlider2";
+import Offer from "./components/Mid.jsx/Offer";
+import HotDeals from "./components/Mid.jsx/HotDeals";
+
+
 function App() {
   //const [count, setCount] = useState(0);
 
@@ -15,7 +28,19 @@ function App() {
       <hr className="w-full border-t border-gray-300 my-0"/>
     <NavBar/>
 
-    <Mid/>
+    <HeroSection/>
+    <CategorySlider/>
+    <PromotionalBanner/>
+    <ProductSlide/>
+    <FlashSale/>
+    <ProductSlider2/>
+    <Offer/>
+    <HotDeals/>
+    <BlueBox/>
+    <ShopByBrands/>
+   { /*<BestSeller/>*/}
+    <NewsSection/>
+    
     <Footer/>
     
       
