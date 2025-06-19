@@ -3,8 +3,8 @@ import newsletterImg from "../../assets/newsletter.png"; // Update path as neede
 
 const NewsSection = () => {
   return (
-    <div className="bg-gray-200 rounded-2xl px-8 py-12 mt-12 mx-4 md:mx-16 lg:mx-24">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+    <div className="bg-gray-200 rounded-2xl px-8 py-12 mt-12  w-350 items-center justify-between md:mx-16 lg:mx-24 mx-auto">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mx-auto" >
         {/* Left Text & Input */}
         <div className="flex-1 space-y-6 text-center lg:text-left pl-4 sm:pl-8 lg:pl-16">
 

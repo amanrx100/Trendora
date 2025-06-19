@@ -7,7 +7,15 @@ import Footer from "./components/Footer/Footer";
 import HeroSection  from "./components/Mid.jsx/HeroSection";
 import CategorySlider  from "./components/Mid.jsx/CategorySlider";
 import NewsSection  from "./components/Mid.jsx/newssection";
-import BestSeller from "./components/Mid.jsx/BestSeller";
+//import BestSeller from "./components/Mid.jsx/BestSeller";
+import ShopByBrands from "./components/Mid.jsx/ShopByBrands";
+import BlueBox from "./components/Mid.jsx/BlueBox";
+import PromotionalBanner from "./components/Mid.jsx/PromotionalBanner";
+import FlashSale from "./components/Mid.jsx/FLashSale";
+import ProductSlide from "./components/Mid.jsx/ProductSlide";
+import ProductSlider2 from "./components/Mid.jsx/ProductSlider2";
+import Offer from "./components/Mid.jsx/Offer";
+import HotDeals from "./components/Mid.jsx/HotDeals";
 
 
 function App() {
@@ -22,7 +30,15 @@ function App() {
 
     <HeroSection/>
     <CategorySlider/>
-    <BestSeller/>
+    <PromotionalBanner/>
+    <ProductSlide/>
+    <FlashSale/>
+    <ProductSlider2/>
+    <Offer/>
+    <HotDeals/>
+    <BlueBox/>
+    <ShopByBrands/>
+   { /*<BestSeller/>*/}
     <NewsSection/>
     
     <Footer/>
