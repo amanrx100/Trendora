@@ -1,13 +1,12 @@
 import React from "react";
-import { ShoppingCart, Star, Store } from "lucide-react";
+import { ShoppingCart, Star, Store, ArrowRight } from "lucide-react";
+
 import basket1 from "../../assets/basket1.png";
 import basket2 from "../../assets/basket2.png";
 import basket3 from "../../assets/basket3.png";
 import basket4 from "../../assets/basket4.png";
 import special from "../../assets/special.png";
 import offer from "../../assets/offer.png";
-
-
 
 const products = [
   {
@@ -21,10 +20,6 @@ const products = [
     sold: 18,
     total: 35,
     image: basket1,
-    days: "",
-    hours: "",
-    minutes: "",
-    seconds: ""
   },
   {
     id: 2,
@@ -37,10 +32,6 @@ const products = [
     sold: 18,
     total: 35,
     image: basket2,
-    days: "",
-    hours: "",
-    minutes: "",
-    seconds: ""
   },
   {
     id: 3,
@@ -56,7 +47,7 @@ const products = [
     days: "889",
     hours: "8",
     minutes: "17",
-    seconds: "57"
+    seconds: "57",
   },
   {
     id: 4,
@@ -69,10 +60,6 @@ const products = [
     sold: 18,
     total: 35,
     image: basket4,
-    days: "",
-    hours: "",
-    minutes: "",
-    seconds: ""
   },
 ];
 
@@ -80,7 +67,7 @@ const ProductCard = ({ product }) => {
   const progress = Math.floor((product.sold / product.total) * 100);
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-300 p-3 flex w-full">
+    <div className="bg-white rounded-xl border border-gray-300 p-3 flex w-full">
       {/* Image & Sale badge */}
       <div className="relative w-1/4 min-w-[100px]">
         <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-md font-semibold">
@@ -95,7 +82,6 @@ const ProductCard = ({ product }) => {
 
       {/* Right Content */}
       <div className="flex-1 flex flex-col justify-between px-3">
-        {/* Top: Price, Rating, Title, Vendor, Progress */}
         <div>
           {/* Price */}
           <div className="text-sm text-gray-500 line-through">
@@ -138,20 +124,28 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
 
-        {/* Middle: Countdown timer */}
+        {/* Countdown timer */}
         <div className="flex justify-start mt-4">
           <div className="flex gap-1 text-xs text-gray-500">
-            <span className="bg-gray-100 px-2 py-1 rounded">Days</span>
-            <span className="bg-gray-100 px-2 py-1 rounded">:</span>
-            <span className="bg-gray-100 px-2 py-1 rounded">Hours</span>
-            <span className="bg-gray-100 px-2 py-1 rounded">:</span>
-            <span className="bg-gray-100 px-2 py-1 rounded">Min</span>
-            <span className="bg-gray-100 px-2 py-1 rounded">:</span>
-            <span className="bg-gray-100 px-2 py-1 rounded">Sec</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">
+              {product.days || "00"}
+            </span>
+            <span>:</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">
+              {product.hours || "00"}
+            </span>
+            <span>:</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">
+              {product.minutes || "00"}
+            </span>
+            <span>:</span>
+            <span className="bg-gray-100 px-2 py-1 rounded">
+              {product.seconds || "00"}
+            </span>
           </div>
         </div>
 
-        {/* Bottom: Add to cart */}
+        {/* Add to cart */}
         <button className="mt-4 bg-sky-100 hover:bg-sky-200 text-sky-700 text-sm font-semibold py-2 rounded-lg flex justify-center items-center gap-2">
           Add To Cart <ShoppingCart className="w-4 h-4" />
         </button>
@@ -159,43 +153,26 @@ const ProductCard = ({ product }) => {
     </div>
   );
 };
+
 const PromoCard = () => {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200  relative overflow-hidden h-full">
-      {/* Logo */}
-      <div className="flex justify-center mb-2">
-        <img
-          src={special}
-          alt="Promo"
-          className="w-200 h-123 absolute"
-        /><div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
-          {/* Logo */}
-          <img src={offer} alt="Logo" className="w-16 h-16 mb-4" />
+    <div className="bg-white rounded-xl border border-gray-200 relative overflow-hidden flex items-center justify-center px-4">
+      {/* Background image */}
+      <img
+        src={special}
+        alt="Promo Background"
+        className="absolute inset-0 w-full h-fit object-cover opacity-70"
+      />
 
-          {/* Text Content */}
-          <p className="text-white text-xl font-bold">$5 off your first order</p>
-          <p className="text-white text-sm mt-1">Delivery by 6:15am</p>
-          <p className="text-white text-sm mb-4">Expire Aug 5</p>
-
-          {/* CTA Button */}
-          <button className="bg-white text-black font-semibold text-sm px-4 py-2 rounded-full hover:bg-gray-100 transition flex items-center gap-1">
-            Shop Now <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
-
-      </div>
-
-
-
-
-
-
-
-
-      <div className="relative flex-1">
-
-
-
+      {/* Foreground content */}
+      <div className="relative z-10 text-center flex flex-col items-center">
+        <img src={offer} alt="Logo" className="w-16 h-16 mb-4" />
+        <p className="text-black text-xl font-bold">$5 off your first order</p>
+        <p className="text-black text-sm mt-1">Delivery by 6:15am</p>
+        <p className="text-black text-sm mb-4">Expire Aug 5</p>
+        <button className="bg-white text-black font-semibold text-sm px-4 py-2 rounded-full hover:bg-gray-100 transition flex items-center gap-1">
+          Shop Now <ArrowRight className="w-4 h-4" />
+        </button>
       </div>
     </div>
   );
@@ -205,18 +182,20 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 p-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex gap-6 items-start">
+        <div className="flex gap-6 items-stretch">
           {/* Product Grid */}
           <div className="flex-1">
-            <div className="grid grid-cols-2 gap-4">
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+              {products.map((product, idx) => (
+                <div key={product.id} className={idx < products.length - 2 ? "mb-2" : ""}>
+                  <ProductCard product={product} />
+                </div>
               ))}
             </div>
           </div>
 
           {/* Promo Card */}
-          <div className="w-80 self-stretch">
+          <div className="w-80 h-full">
             <PromoCard />
           </div>
         </div>

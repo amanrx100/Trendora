@@ -6,8 +6,8 @@ import NavBar from "./components/Header/NavBar";
 import Footer from "./components/Footer/Footer";
 import HeroSection  from "./components/Mid.jsx/HeroSection";
 import CategorySlider  from "./components/Mid.jsx/CategorySlider";
-import NewsSection  from "./components/Mid.jsx/newssection";
-//import BestSeller from "./components/Mid.jsx/BestSeller";
+import NewsSection  from "./components/Mid.jsx/NewsSection";
+import BestSeller from "./components/Mid.jsx/BestSeller";
 import ShopByBrands from "./components/Mid.jsx/ShopByBrands";
 import BlueBox from "./components/Mid.jsx/BlueBox";
 import PromotionalBanner from "./components/Mid.jsx/PromotionalBanner";
@@ -38,7 +38,7 @@ function App() {
     <HotDeals/>
     <BlueBox/>
     <ShopByBrands/>
-   { /*<BestSeller/>*/}
+   <BestSeller/>
     <NewsSection/>
     
     <Footer/>
