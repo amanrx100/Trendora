@@ -1,5 +1,6 @@
 //import { useState } from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Topbar from "./components/Header/Topbar";
 import Middle from "./components/Header/Middle";
 import NavBar from "./components/Header/NavBar";
@@ -16,35 +17,44 @@ import ProductSlide from "./components/Mid.jsx/ProductSlide";
 import ProductSlider2 from "./components/Mid.jsx/ProductSlider2";
 import Offer from "./components/Mid.jsx/Offer";
 import HotDeals from "./components/Mid.jsx/HotDeals";
+import Login from "./pages/Login/Login"
+import Register from "./pages/Register/Register";
 
 
 function App() {
-  //const [count, setCount] = useState(0);
-
   return (
-    <>
-    <Topbar/>
-    <Middle/>
-      <hr className="w-full border-t border-gray-300 my-0"/>
-    <NavBar/>
+    <Router>
+      <Topbar />
+      <Middle />
+      <hr className="w-full border-t border-gray-300 my-0" />
+      <NavBar />
 
-    <HeroSection/>
-    <CategorySlider/>
-    <PromotionalBanner/>
-    <ProductSlide/>
-    <FlashSale/>
-    <ProductSlider2/>
-    <Offer/>
-    <HotDeals/>
-    <BlueBox/>
-    <ShopByBrands/>
-   {/*<BestSeller/>*/}
-    <NewsSection/>
-    
-    <Footer/>
-    
-      
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <CategorySlider />
+              <PromotionalBanner />
+              <ProductSlide />
+              <FlashSale />
+              <ProductSlider2 />
+              <Offer />
+              <HotDeals />
+              <BlueBox />
+              <ShopByBrands />
+              {/* <BestSeller /> */}
+              <NewsSection />
+            </>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+
+      <Footer />
+    </Router>
   );
 }
 
