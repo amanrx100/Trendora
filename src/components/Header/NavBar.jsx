@@ -110,6 +110,7 @@ const NavBar = () => {
                                 </a>
                                 {activeDropdown === 'pages' && (
                                     <div className="absolute left-0 mt-2 w-48 bg-white border border-white shadow-lg rounded-lg py-2 z-50">
+                                        <Link to="/cartTable" className="block px-4 py-2 hover:bg-gray-100">CartTable</Link> 
                                         <Link to="/wishlist" className="block px-4 py-2 hover:bg-gray-100">WishList</Link> 
                                         <Link to="/checkout" className="block px-4 py-2 hover:bg-gray-100">Checkout</Link> 
                                          <Link to="/login" className="block px-4 py-2 hover:bg-gray-100">Account</Link> 
