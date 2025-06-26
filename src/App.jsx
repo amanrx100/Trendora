@@ -19,6 +19,8 @@ import Offer from "./components/Mid.jsx/Offer";
 import HotDeals from "./components/Mid.jsx/HotDeals";
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register";
+import Checkout from  "./pages/Checkout/Checkout";
+import WishList from "./pages/Checkout/WishList";
 
 
 function App() {
@@ -51,6 +53,9 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/Checkout" element={<Checkout />} />
+        <Route path="/WishList" element={<WishList />} />
+
       </Routes>
 
       <Footer />
