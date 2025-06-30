@@ -30,7 +30,7 @@ export default function ShopByBrands() {
   }, [currentIndex]);
 
   return (
-    <div className="py-8 bg-white mx-auto">
+    <div className="py-8 bg-transparent mx-auto">
       {/* Container with proper horizontal padding */}
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
