@@ -1,11 +1,11 @@
 import React from 'react';
-import hotdeals from '../../assets/hotdeals.png';
+import hotdeals from "../../assets/hotdeals.png";
 import p1 from '../../assets/p1.png';
 import p2 from '../../assets/p2.png';
 import product1 from '../../assets/product1.png';
 import product2 from '../../assets/product2.png';
-import { ShoppingCart, Star } from 'lucide-react'; // or the icon library you use
-import shape from '../../assets/shape.png'; // Assuming you have a shape image for the promo section
+import { ShoppingCart, Star } from 'lucide-react'; 
+
 
 
 

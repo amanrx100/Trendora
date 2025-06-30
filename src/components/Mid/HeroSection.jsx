@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { CaretDoubleDown } from "phosphor-react";
 import banner from "../../assets/banner.png";

@@ -1,5 +1,5 @@
 import React from 'react';
-import offer1 from '../../assets/offer1.png';
+import offer1 from "../../assets/offer1.png"; // Adjust the path as necessary
 import offer2 from '../../assets/offer2.png';
 import offerlogo from '../../assets/offerlogo.png';
 import AOS from 'aos';

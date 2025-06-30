@@ -5,18 +5,18 @@ import Topbar from "./components/Header/Topbar";
 import Middle from "./components/Header/Middle";
 import NavBar from "./components/Header/NavBar";
 import Footer from "./components/Footer/Footer";
-import HeroSection  from "./components/Mid.jsx/HeroSection";
-import CategorySlider  from "./components/Mid.jsx/CategorySlider";
-import NewsSection  from "./components/Mid.jsx/NewsSection";
-//import BestSeller from "./components/Mid.jsx/BestSeller";
-import ShopByBrands from "./components/Mid.jsx/ShopByBrands";
-import BlueBox from "./components/Mid.jsx/BlueBox";
-import PromotionalBanner from "./components/Mid.jsx/PromotionalBanner";
-import FlashSale from "./components/Mid.jsx/FLashSale";
-import ProductSlide from "./components/Mid.jsx/ProductSlide";
-import ProductSlider2 from "./components/Mid.jsx/ProductSlider2";
-import Offer from "./components/Mid.jsx/Offer";
-import HotDeals from "./components/Mid.jsx/HotDeals";
+import HeroSection from "./components/Mid/HeroSection"
+import CategorySlider from "./components/Mid/CategorySlider";
+import PromotionalBanner from "./components/Mid/PromotionalBanner";
+import ProductSlide from "./components/Mid/ProductSlide";
+//import FlashSale from "./components/Mid/FlashSale";
+import ProductSlider2 from "./components/Mid/ProductSlider2";
+import Offer from "./components/Mid/Offer";
+import HotDeals from "./components/Mid/HotDeals";
+import BlueBox from "./components/Mid/BlueBox";
+import ShopByBrands from "./components/Mid/ShopByBrands";
+import NewsSection from "./components/Mid/NewsSection";
+
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register";
 import Checkout from  "./pages/Checkout/Checkout";
@@ -40,7 +40,7 @@ function App() {
               <CategorySlider />
               <PromotionalBanner />
               <ProductSlide />
-              <FlashSale />
+               {/* <FlashSale />*/}
               <ProductSlider2 />
               <Offer />
               <HotDeals />
